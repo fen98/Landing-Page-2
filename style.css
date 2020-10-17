@@ -1,166 +1,114 @@
-body{
-	background: #f1f1f1;
-}
-
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-header h1{
-	font-family: 'Crete Round', serif;
-	font-size: 50px;
-	padding: 30px; 
-	margin-left: 100px;
-	color: #333;
+body{
+	background-image: url(https://cdn.pixabay.com/photo/2016/11/12/23/00/mailbox-1819966_960_720.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-header p{
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
-	letter-spacing: 2px;
-	margin-top: -30px;
-	margin-left: 130px;
-	color: #333;
-}
-
-nav {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 20px;
-	margin-right: 100px;
-}
-
-nav ul li{
-	float: right;
-	display: inline-block;
-	margin-right: 50px;
-	list-style-type: none;
-}
-
-nav a{
-	text-decoration: none;
-	color: #999;
-}
-
-nav a:hover{
-	color: #87CEFA;
-}
-
-.container{
-	width: 100%;
-	height: 600px;
-	background-color: #f1f1f1;
-	margin: 50px 0;
-}
-
-.container img{
-	width: 400px;
-	height: 400px;
-	margin: 50px 100px;
-	border-radius: 400px;
-}
-
-.card{
-	width: 500px;
+.first-container{
+	background: rgba(255,255,255,.5);
+	width: 80%;
 	height: 500px;
-	background: #f1f1f1;
-	float: right;
-	margin: 40px 230px 0 0;
-	border: 1px solid #f4f4f4; 
+	margin: 100px auto;
+	position: relative;
 	border-radius: 10px;
-	box-shadow: -webkit-box-shadow: 13px 14px 13px 1px rgba(0,0,0,0.87);
--moz-box-shadow: 13px 14px 13px 1px rgba(0,0,0,0.87);
-box-shadow: 13px 14px 13px 1px rgba(0,0,0,0.87);
+	box-shadow: 0 8px 6px -6px black;
 }
 
-.card .con-title h2{
-	font-family: 'Crete Round', serif;
-	font-size: 70px;
-	letter-spacing: 2px;
-	margin-left: 20px;
-	color: #333;
-}
-
-.card .con-title p{
-	font-family: 'Crete Round', serif;
-	font-size: 30px;
-	letter-spacing: 2px;
-	margin-left: 20px;
-	color: #333;
-}
-
-.card button{
-	width: 130px;
-	height: 130px;
-	margin: 20px 0 0 20px;
-	color: #333;
-	background-color: teal;
-	border: none;
-	border-radius: 130px;
-	outline: none;
-	cursor: pointer;
-	
-}
-
-.con-btn .btn-1{
-	background: #87CEEB;
-	color: #333;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: bold;
-}
-
-.con-btn .btn-2{
-	background: #00FF7F;
-	color: #333;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: bold;
-}
-
-.con-btn .btn-3{
-	background: #FF7F50;
-	color: #333;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: bold;
-}
-
-.con-about{
-	margin: 20px 0 0 20px;	
-	line-height: 20px;
-	color: #333;
-	font-family: 'Josefin Sans', sans-serif;
-}
-
-footer{
+.first-container .nav-bar{
 	width: 100%;
-	height: 70px;
-	text-align: center;
-	background: #f1f1f1;
-	margin-top: -50px;
+	height: 50px;
 }
 
-footer a{
+.first-container .nav-bar .logo{
+	line-height: 50px;
+	position: relative;
+	left: 20px;
+}
+
+.first-container .nav-bar .logo a{
 	text-decoration: none;
-	color: #333;
-	font-family: 'Josefin Sans', sans-serif;
-}
-
-footer a:hover{
-	color: #000;
-	border-bottom: 1px solid;
-}
-
-footer i{
-	background: #f1f1f1;
+	color: black;
 	display: block;
-	border-radius: 3px;
-	color: #333;
-	margin: 10px auto;
 }
 
-.far{
-	padding: 7px;
-} 
-.fab{
-	padding: 7px;
+.first-container .nav-bar .logo h1{
+	letter-spacing: 2px;
+	float: left;
+	font-family: arial;
+	font-size: 30px;
 }
+
+.first-container .nav-bar .logo h1 span{
+	color: white;
+}
+
+.first-container .nav-bar .logo a:hover{
+	color: white;
+	transition: 0.8s;
+}
+
+.first-container .nav-bar .logo h1 span:hover{
+	color: black;
+	transition: 0.9s;
+}
+
+.first-container .menu{
+	position: absolute;
+	right: 0;
+	line-height: 50px;
+}
+
+.first-container .menu a{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	margin: 0 20px;
+}
+
+.first-container .menu a:hover{
+	font-size: 14px;
+	transition: 0.9s;
+	transition-delay: 0.2s;
+}
+
+.first-container .prfl{
+	width: 45%;
+	position: relative;
+	left: 20px;
+	top: 100px;
+}
+
+.first-container .prfl h1{
+	font-family: sans-serif;
+	font-size: 50px;
+}
+
+.first-container .prfl h1 span{
+	color: red;
+}
+
+.first-container .prfl p{
+	line-height: 25px;
+	margin-top: 20px;
+	font-family: arial;
+	font-weight: 500;
+}
+
+.first-container .prfl button{
+	width: 100px;
+	height: 30px;
+	background: red;
+	border-radius: 5px;
+	margin-top: 20px;
+	border-color: rgba(255,255,255,.5);
+	cursor: pointer;
+	outline: none;
+}
+
