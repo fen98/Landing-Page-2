@@ -2,198 +2,171 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
 }
 
 body{
-	background: coral;
+	background: #dde1e7;
 }
 
+.card{
+	width: 400px;
+	height: 700px;
+	margin: 50px auto;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 40px;
+	overflow: hidden;
+	position: relative;
+}
 
-nav{
-	width: 100%;
+.card .logo{
+	background: #dde1e7;
+	width: 50px;
 	height: 50px;
 	margin-top: 20px;
-	text-transform: uppercase;
-}
-
-nav .logo{
-	width: 30%;
-	height: 50px;
-	float: left;
-}
-
-nav .logo h1{
-	font-size: 30px;
 	margin-left: 20px;
-	line-height: 50px;
-	letter-spacing: 3px;
-}
-
-nav .logo h1 a{
-	text-decoration: none;
-	color: black;
-}
-
-nav .nav-list{
-	width: 40%;
-	height: 50px;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 50%;
 	float: left;
 }
 
-nav .nav-list ul{
+.card .logo h1{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
 	text-align: center;
 	line-height: 50px;
 }
 
-nav .nav-list ul li{
-	list-style-type: none;
-	display: inline-block;
-	margin: 0 20px;
-}
-
-nav .nav-list ul li a{
+.card .logo a{
+	display: block;
+	color: #375832;
 	text-decoration: none;
-	color: black;
 }
 
-nav .nav-list ul li a:hover{
-	transition: 0.9;
+.card .logo:hover{
+	box-shadow: inset -3px -3px 7px #ffffff73,
+				inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-nav .nav-list ul li a:after{
-	
-}
 
-nav .contact{
-	width: 30%;
+.card .menu-list{
+	background: #dde1e7;
+	width: 50px;
 	height: 50px;
-	float: left;
-	position: relative;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 50%;
 }
 
-nav .contact a{
+.card .menu-list a{
+	display: block;
+	color: #375832;
 	text-decoration: none;
-	position: absolute;
-	right: 20px;
-	top: 12px;
-	color: black;
 }
 
-nav .contact a:hover{
-	border-bottom: 1px solid black;
+.card .menu-list:hover{
+	box-shadow: inset -3px -3px 7px #ffffff73,
+				inset 3px 3px 5px rgba(94, 104, 121, 0.288);
 }
 
-.container{
-	position: relative;
-	width: 100%;
+.card .main{
+	clear: both;
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
 }
 
-.container .home{
-	/*background: white;*/
-	width: 80%;
-	height: 600px;
-	margin: auto;
-	line-height: 600px;
+.card .main img{
+	width: 200px;
+	height: 200px;
+	border: 10px solid #dde1e7;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 50%;
 }
 
-.container .home h1{
-	font-size: 150px;
-	text-align: center;
-}
-
-.container .home h1 span{
-	font-size: 200px;
-}
-
-.container .profile{
-	/*background: yellow;*/
-	width: 60%;
-	height: 600px;
-	padding-top: 150px;
-	margin: auto;
-	text-align: center;
-}
-
-.container .profile p{
-	margin-top: 10px;
-}
-
-.container .profile button{
-	background: coral;
-	width: 100px;
-	height: 30px;
-	margin-top: 40px;
-	border: 3px solid black;
-	border-radius: 5px;
-	outline: none;
-	cursor: pointer;
-}
-
-.container .profile button:hover{
-	background-color: black;
-	color: white;
-}
-
-.container .skills{
-	/*background: skyblue;*/
-	width: 80%;
-	height: 600px;
-	margin: auto;
-	text-align: center;
-	padding-top: 150px;
-}
-
-footer{
-	background: #f4f4f4;
-	width: 100%;
-	height: 230px;
-	position: relative;
-	left: 0;
-	right: 0;
-}
-
-footer h1{
-	color: black;
-	font-size: 100px;
-	text-align: center;
-	line-height: 200px;
-	opacity: 0.1;
-}
-
-footer p{
-	font-weight: bold;
-	position: absolute;
-	left: 20px;
-	bottom: 5px;
-}
-
-footer .social-media{
-	width: 300px;
-	text-align: right;
-	position: absolute;
-	right: 20px;
-	bottom: 2px;
-}
-
-footer .social-media a{
+.card .main p{
+	font-family: 'Poppins', sans-serif;
 	font-size: 20px;
-	margin: 0 10px;
-	color: black;
+	font-weight: bold;
+	color: #375832;
+	text-align: center;
+	margin-top: 20px;
 }
 
-.fa-github:hover{
-	opacity: .7;
+.card .main span{
+	font-size: 25px;
+	font-weight: bold;
+	color: #375832;
 }
 
-.fa-facebook:hover{
+.card .main-list{
+	margin: 50px auto;
+}
+
+.card .main-list ul li{
+	width: 300px;
+	height: 30px;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 10px;
+	margin: 20px auto;
+	list-style-type: none;
+	text-align: center;
+	line-height: 30px;
+}
+
+.card .main-list ul li a{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	text-decoration: none;
+	color: #375832;
+}
+
+.card .main-list li:hover{
+	box-shadow: inset -3px -3px 7px #ffffff73,
+				inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.card .social-media{
+	text-align: center;
+}
+
+.card .social-media a{
+	display: inline-block;
+	background:  #dde1e7;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+	line-height: 50px;
+	box-shadow: -3px -3px 7px #ffffff73,
+				3px 3px 5px rgba(94, 104, 121, 0.288);
+	border-radius: 50%;
+}
+
+.card .social-media a:hover{
+	box-shadow: inset -3px -3px 7px #ffffff73,
+				inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+}
+
+.fa-facebook{
 	color: #3b5998;
 }
 
-.fa-twitter:hover{
+.fa-twitter{
 	color: #00acee;
 }
 
-.fa-instagram:hover{
+.fa-instagram{
 	color: #f09433;
 }
